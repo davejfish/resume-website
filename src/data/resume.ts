@@ -9,6 +9,8 @@ export const profile = {
   location: "Seattle, WA",
   email: "dave.j.fish@gmail.com",
   phone: "253-355-2651",
+  // PDF served from /public. Drop the file here to enable the download button.
+  resumeFile: "/Dave-Fisher-Resume.pdf",
   socials: {
     linkedin: "https://linkedin.com/in/davefisher88",
     github: "https://github.com/davejfish",
