@@ -5,7 +5,7 @@ export function Hero() {
   return (
     <section
       id="top"
-      className="mx-auto flex max-w-3xl flex-col gap-6 px-6 py-24 sm:py-32"
+      className="mx-auto flex max-w-3xl flex-col gap-6 px-6 py-24 sm:py-16"
     >
       <p className="text-sm font-medium text-zinc-500">{profile.location}</p>
       <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">
