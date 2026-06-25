@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(node --version)",
+      "PowerShell(npm --version)",
+      "PowerShell(\"---NODE---\")",
+      "PowerShell(\"---NPM---\")",
+      "PowerShell(\"---SRC---\")",
+      "PowerShell(npm install @vercel/analytics)",
+      "PowerShell(npm run build)"
+    ]
+  }
+}
