@@ -119,7 +119,32 @@ export type Project = {
   tech: string[];
   liveUrl?: string;
   sourceUrl?: string;
+  comingSoon?: boolean;
 };
 
-// Populated later — this powers the Projects section.
-export const projects: Project[] = [];
+// Powers the Projects section.
+export const projects: Project[] = [
+  {
+    title: "Federated GraphQL Demo",
+    description:
+      "A hands-on demo modeling a users → posts → comments domain across independent subgraphs, composed under a single gateway to show how Apollo Federation stitches entities together and resolves references across service boundaries.",
+    tech: ["GraphQL", "Apollo Federation", "TypeScript", "Node.js"],
+    comingSoon: true,
+  },
+  {
+    title: "Hypersmith.ai",
+    description:
+      "A local-first AI coding workspace that helps developers scale projects with AI agents while keeping code and models on their own machine. It unifies capabilities usually spread across separate tools: Recall, a code-retrieval engine that indexes a repo across semantic, lexical, structural, dependency, and git-history dimensions to give agents typed search APIs instead of raw shell tools — shrinking prompts and cutting token usage; task execution that runs each task against an isolated git worktree through a provider-agnostic task-runner boundary, with durable progress, recovery, and cancellation; and a first-class benchmark harness for evaluating real local-model task runs with paired-variant comparisons. Architected for graceful degradation under partial failure, with clean route → model → service → datastore layering and a dual-engine SQLite/Postgres persistence layer.",
+    tech: [
+      "TypeScript",
+      "Fastify",
+      "React",
+      "Electron",
+      "Drizzle ORM",
+      "SQLite/Postgres (pgvector)",
+      "LanceDB",
+      "node-llama-cpp",
+    ],
+    comingSoon: true,
+  },
+];

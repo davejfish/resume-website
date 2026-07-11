@@ -18,7 +18,14 @@ export function Projects() {
               key={project.title}
               className="flex flex-col gap-3 rounded-xl border border-black/[.08] p-6 dark:border-white/[.12]"
             >
-              <h3 className="text-lg font-semibold">{project.title}</h3>
+              <div className="flex items-start justify-between gap-3">
+                <h3 className="text-lg font-semibold">{project.title}</h3>
+                {project.comingSoon && (
+                  <span className="shrink-0 rounded-full bg-amber-500/[.12] px-2.5 py-0.5 text-xs font-medium text-amber-700 dark:bg-amber-400/[.12] dark:text-amber-300">
+                    Coming soon
+                  </span>
+                )}
+              </div>
               <p className="flex-1 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
                 {project.description}
               </p>
