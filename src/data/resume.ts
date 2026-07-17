@@ -129,7 +129,7 @@ export const projects: Project[] = [
     description:
       "A hands-on demo modeling a users → posts → comments domain across independent subgraphs, composed under a single gateway to show how Apollo Federation stitches entities together and resolves references across service boundaries.",
     tech: ["GraphQL", "Apollo Federation", "TypeScript", "Node.js"],
-    comingSoon: true,
+    sourceUrl: "https://github.com/davejfish/federation-gateway",
   },
   {
     title: "Hypersmith.ai",
