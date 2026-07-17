@@ -21,7 +21,12 @@ export function Projects() {
               <div className="flex items-start justify-between gap-3">
                 <h3 className="text-lg font-semibold">
                   {project.sourceUrl ? (
-                    <a href={project.sourceUrl} className="hover:underline">
+                    <a
+                      href={project.sourceUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:underline"
+                    >
                       {project.title}
                     </a>
                   ) : (
@@ -49,12 +54,22 @@ export function Projects() {
               </div>
               <div className="flex gap-4 text-sm font-medium">
                 {project.liveUrl && (
-                  <a href={project.liveUrl} className="hover:underline">
+                  <a
+                    href={project.liveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:underline"
+                  >
                     Live demo →
                   </a>
                 )}
                 {project.sourceUrl && (
-                  <a href={project.sourceUrl} className="hover:underline">
+                  <a
+                    href={project.sourceUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:underline"
+                  >
                     Source →
                   </a>
                 )}

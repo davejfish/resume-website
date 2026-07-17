@@ -8,10 +8,20 @@ export function Footer() {
           © {profile.name}. Built with Next.js & Tailwind CSS.
         </span>
         <div className="flex gap-4">
-          <a href={profile.socials.github} className="transition-colors hover:text-foreground">
+          <a
+            href={profile.socials.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition-colors hover:text-foreground"
+          >
             GitHub
           </a>
-          <a href={profile.socials.linkedin} className="transition-colors hover:text-foreground">
+          <a
+            href={profile.socials.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition-colors hover:text-foreground"
+          >
             LinkedIn
           </a>
         </div>
