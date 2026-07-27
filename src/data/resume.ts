@@ -8,7 +8,6 @@ export const profile = {
     "Full-stack software developer who makes clunky things run smoothly — building customer-facing APIs and web apps end to end with AI-augmented workflows.",
   location: "Seattle, WA",
   email: "dave.j.fish@gmail.com",
-  phone: "253-355-2651",
   // PDF served from /public. Drop the file here to enable the download button.
   resumeFile: "/Dave-Fisher-Resume.pdf",
   socials: {

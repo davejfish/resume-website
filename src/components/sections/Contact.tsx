@@ -12,9 +12,6 @@ export function Contact() {
           <a href={`mailto:${profile.email}`} className="font-medium hover:underline">
             {profile.email}
           </a>
-          <a href={`tel:${profile.phone.replace(/[^0-9]/g, "")}`} className="hover:underline">
-            {profile.phone}
-          </a>
         </div>
         <div className="mt-2 flex gap-4 text-sm font-medium">
           <a
